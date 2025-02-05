@@ -14,7 +14,6 @@ const Header = () => {
   return (
     <>
       <div className="flex bg-[#121119] justify-between items-center w-full px-5 py-5">
-        {/* {logo} */}
         <div>
           <Image
             src="/logo-union-developers.svg"
@@ -23,8 +22,6 @@ const Header = () => {
             width={220}
           />
         </div>
-
-        {/* {menu} */}
 
         <Sheet>
           <SheetTrigger>
@@ -73,7 +70,7 @@ const Header = () => {
                 Dúvidas
               </a>
 
-              <Button className="bg-gradient-to-r from-purple-600 font-3xl to-blue-600 text-white font-bold py-5 px-5 rounded-lg">
+              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold py-5 px-5 text-2xl rounded-lg">
                 Junte-se a nós
               </Button>
             </div>

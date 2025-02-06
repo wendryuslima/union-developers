@@ -13,7 +13,7 @@ import { Button } from "./ui/button";
 const Header = () => {
   return (
     <>
-      <div className="flex bg-[#121119] justify-between items-center w-full px-5 py-5">
+      <div className="flex fixed top-0 bg-[#121119] justify-between items-center w-full px-5 py-5">
         <div>
           <Image
             src="/logo-union-developers.svg"

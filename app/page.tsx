@@ -3,6 +3,7 @@ import Benefits from "./components/benefits";
 import Header from "./components/header";
 import Main from "./components/main";
 import Pillars from "./components/pillars";
+import Steps from "./components/steps";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <About />
       <Pillars />
       <Benefits />
+      <Steps />
     </div>
   );
 };

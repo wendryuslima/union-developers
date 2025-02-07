@@ -1,4 +1,5 @@
 import About from "./components/about";
+import Benefits from "./components/benefits";
 import Header from "./components/header";
 import Main from "./components/main";
 import Pillars from "./components/pillars";
@@ -10,6 +11,7 @@ const Home = () => {
       <Main />
       <About />
       <Pillars />
+      <Benefits />
     </div>
   );
 };

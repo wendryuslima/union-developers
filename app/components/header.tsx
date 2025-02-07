@@ -13,7 +13,7 @@ import { Button } from "./ui/button";
 const Header = () => {
   return (
     <>
-      <div className="flex fixed top-0 bg-[#121119] justify-between items-center w-full px-5 py-5">
+      <div className="fixed top-0 z-50 flex w-full items-center justify-between bg-[#121119] px-5 py-5">
         <div>
           <Image
             src="/logo-union-developers.svg"
@@ -32,45 +32,45 @@ const Header = () => {
               <SheetDescription></SheetDescription>
             </SheetHeader>
 
-            <div className="flex flex-col items-left mt-8 space-y-6 ">
+            <div className="items-left mt-8 flex flex-col space-y-6">
               <a
-                className="font-semibold text-white text-1xl transition-colors duration-300 hover:bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] hover:bg-clip-text hover:text-transparent"
+                className="text-1xl font-semibold text-white transition-colors duration-300 hover:bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] hover:bg-clip-text hover:text-transparent"
                 href="/about"
               >
                 Sobre
               </a>
               <a
-                className="font-semibold text-white text-1xl transition-colors duration-300 hover:bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] hover:bg-clip-text hover:text-transparent"
+                className="text-1xl font-semibold text-white transition-colors duration-300 hover:bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] hover:bg-clip-text hover:text-transparent"
                 href="/about"
               >
                 Pilares
               </a>
               <a
-                className="font-semibold text-white text-1xl transition-colors duration-300 hover:bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] hover:bg-clip-text hover:text-transparent"
+                className="text-1xl font-semibold text-white transition-colors duration-300 hover:bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] hover:bg-clip-text hover:text-transparent"
                 href="/about"
               >
                 Beneficios
               </a>
               <a
-                className="font-semibold text-white text-1xl transition-colors duration-300 hover:bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] hover:bg-clip-text hover:text-transparent"
+                className="text-1xl font-semibold text-white transition-colors duration-300 hover:bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] hover:bg-clip-text hover:text-transparent"
                 href="/about"
               >
                 Etapas
               </a>
               <a
-                className="font-semibold text-white text-1xl transition-colors duration-300 hover:bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] hover:bg-clip-text hover:text-transparent"
+                className="text-1xl font-semibold text-white transition-colors duration-300 hover:bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] hover:bg-clip-text hover:text-transparent"
                 href="/about"
               >
                 Depoimentos
               </a>
               <a
-                className="font-semibold text-white text-1xl transition-colors duration-300 hover:bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] hover:bg-clip-text hover:text-transparent"
+                className="text-1xl font-semibold text-white transition-colors duration-300 hover:bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] hover:bg-clip-text hover:text-transparent"
                 href="/about"
               >
                 Dúvidas
               </a>
 
-              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold py-5 px-5 text-2xl rounded-lg">
+              <Button className="rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 px-5 py-5 text-2xl font-bold text-white">
                 Junte-se a nós
               </Button>
             </div>

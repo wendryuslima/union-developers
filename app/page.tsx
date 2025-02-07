@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Main from "./components/main";
 import Pillars from "./components/pillars";
 import Steps from "./components/steps";
+import Subscribes from "./components/subscribe";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Pillars />
       <Benefits />
       <Steps />
+      <Subscribes />
     </div>
   );
 };

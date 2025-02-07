@@ -1,18 +1,18 @@
-import { Button } from "./ui/button";
+import ButtonPersonalized from "./button-personalized";
 
 const Main = () => {
   return (
     <div
-      className="flex flex-col w-full h-[400px] bg-cover p-[5.6rem_1.6rem_1.2rem]"
+      className="flex h-[400px] w-full flex-col bg-cover p-[5.6rem_1.6rem_1.2rem]"
       style={{
         backgroundImage:
           "url('https://media.graphassets.com/j1rOxE97RsCbeyFrMU4z')",
       }}
     >
-      <div className="items-left w-[300px] flex flex-col gap-4">
+      <div className="items-left flex w-[300px] flex-col gap-4">
         <h2 className="text-2xl font-bold text-white">
           Ganhe{" "}
-          <span className="font-semibold text-transparent bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] bg-clip-text">
+          <span className="bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] bg-clip-text font-semibold text-transparent">
             experiência{" "}
           </span>{" "}
           como desenvolvedor júnior
@@ -23,9 +23,7 @@ const Main = () => {
           estar em uma empresa. Participe dessa experiência única e impulsione
           sua carreira como desenvolvedor!
         </p>
-        <Button className="bg-gradient-to-r from-purple-700 text-2xl to-blue-600 text-white font-bold py-8 px-8 rounded-lg">
-          Quero participar
-        </Button>
+        <ButtonPersonalized text="Quero participar" />
       </div>
     </div>
   );

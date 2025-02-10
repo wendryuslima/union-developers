@@ -1,6 +1,7 @@
 import About from "./components/about";
 import Benefits from "./components/benefits";
 import Depoiments from "./components/depoiments";
+import Doubts from "./components/doubts";
 import Header from "./components/header";
 import Main from "./components/main";
 import Pillars from "./components/pillars";
@@ -20,6 +21,7 @@ const Home = () => {
       <Subscribes />
       <Depoiments />
       <Team />
+      <Doubts />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import { Control } from "react-hook-form";
 import { FormSchema } from "./form.team";
 import { FormControl, FormField, FormItem, FormLabel } from "./ui/form";
 import { Input } from "./ui/input";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { RadioGroup, RadioGroupItem } from "@/app/components/ui/radio-group";
 
 interface Step2Props {
   control: Control<FormSchema>;
@@ -99,7 +99,7 @@ const Step2 = ({ control }: Step2Props) => {
           render={({ field }) => (
             <FormItem>
               <FormLabel>
-                <span className="text-red-500 mr-1">*</span>
+                <span className="mr-1 text-red-500">*</span>
                 Fale sobre como foi construir esse projeto? Quais foram os
                 aprendizados e dificuldades que teve durante o desenvolvimento?
               </FormLabel>

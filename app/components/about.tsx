@@ -1,10 +1,8 @@
-
-
 const About = () => {
   return (
-    <div className="relative mt-10 w-full max-w-lg mx-auto p-6">
-      <div className="relative text-white p-6 -z-20 rounded-xl border-2 border-purple-500">
-        <h2 className="absolute -top-5 left-4 px-3 text-lg font-semibold bg-[#1F1D2B] z-20">
+    <div className="relative mx-auto mt-10 w-full max-w-lg p-6">
+      <div className="relative -z-20 rounded-xl border-2 border-purple-500 p-6 text-white">
+        <h2 className="b absolute -top-5 left-4 z-20 bg-[#1F1D2B] text-clip-text px-3 text-lg font-semibold text-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)]">
           Quem somos?
         </h2>
         <p className="mt-4 text-center">
@@ -23,23 +21,21 @@ const About = () => {
         </p>
       </div>
 
-      <div className="relative flex flex-col items-center text-center ">
-        <div className="relative flex items-center justify-center w-full max-w-md">
-          <div className="absolute w-1 h-9 bg-gradient-to-b from-purple-700 to-blue-500 top-0"></div>
-          <div className="w-1/3 h-0.5 bg-gradient-to-r from-purple-500 to-transparent"></div>
-          <h2 className="font-semibold mt-12 text-2xl text-transparent bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] bg-clip-text">
+      <div className="relative flex flex-col items-center text-center">
+        <div className="relative flex w-full max-w-md items-center justify-center">
+          <div className="absolute top-0 h-9 w-1 bg-gradient-to-b from-purple-700 to-blue-500"></div>
+          <div className="h-0.5 w-1/3 bg-gradient-to-r from-purple-500 to-transparent"></div>
+          <h2 className="mt-12 bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] bg-clip-text text-2xl font-semibold text-transparent">
             Pilares
           </h2>
-          <div className="w-1/3 h-0.5 bg-gradient-to-l from-blue-500 to-transparent"></div>
+          <div className="h-0.5 w-1/3 bg-gradient-to-l from-blue-500 to-transparent"></div>
         </div>
 
-        <p className="max-w-md text-white mt-3">
+        <p className="mt-3 max-w-md text-white">
           Os pilares que sustentam o formato inovador de aprendizagem do Union é
           a junção de incríveis metodologias!
         </p>
       </div>
-
-      
     </div>
   );
 };

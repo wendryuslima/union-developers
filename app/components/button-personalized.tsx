@@ -2,6 +2,7 @@ import { Button } from "./ui/button";
 
 interface ButtonPersonalizedProps {
   text: string;
+  onClick?: () => void;
 }
 
 const ButtonPersonalized = ({ text }: ButtonPersonalizedProps) => {

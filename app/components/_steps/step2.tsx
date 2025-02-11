@@ -1,7 +1,7 @@
 import { Control } from "react-hook-form";
-import { FormSchema } from "./form.team";
-import { FormControl, FormField, FormItem, FormLabel } from "./ui/form";
-import { Input } from "./ui/input";
+import { FormSchema } from "../_team/form.team";
+import { FormControl, FormField, FormItem, FormLabel } from "../ui/form";
+import { Input } from "../ui/input";
 import { RadioGroup, RadioGroupItem } from "@/app/components/ui/radio-group";
 
 interface Step2Props {

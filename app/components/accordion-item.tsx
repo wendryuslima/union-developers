@@ -20,12 +20,12 @@ const AccordionItemComponent = ({
     <Accordion
       type="single"
       collapsible
-      className="mt-4 w-full max-w-md gap-4 rounded-lg border border-none border-gray-300 bg-white shadow-lg"
+      className="mx-auto mt-4 w-full max-w-md gap-4 rounded-lg bg-white shadow-lg lg:max-w-4xl"
     >
       <AccordionItem value="item-1">
         <AccordionTrigger
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center rounded-t-lg bg-gradient-to-r from-[#6A11CB] to-[#2575FC] px-4 py-3 text-left text-lg font-bold text-white"
+          className="flex items-center rounded-lg bg-gradient-to-r from-[#6A11CB] to-[#2575FC] px-4 py-3 text-left text-lg font-bold text-white"
         >
           <span className="flex-1">{title}</span>
           {isOpen ? (
@@ -35,7 +35,7 @@ const AccordionItemComponent = ({
           )}
         </AccordionTrigger>
         <AccordionContent className="rounded-b-lg bg-white p-4 text-gray-700">
-          <p className=""> {description}</p>
+          <p>{description}</p>
         </AccordionContent>
       </AccordionItem>
     </Accordion>

@@ -7,14 +7,15 @@ import ButtonPersonalized from "./button-personalized";
 
 const Subscribes = () => {
   return (
-    <div className="m-auto mt-20 flex w-[400px] flex-col items-center justify-center gap-4 rounded-lg bg-[#252031] p-6">
+    <div className="m-auto mt-20 flex w-[400px] flex-col items-center justify-center gap-4 rounded-lg bg-[#252031] p-6 lg:h-[250px] lg:w-[900px] lg:flex-row">
       <motion.div
         animate={{ y: [0, -10, 0] }}
         transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+        className="h-[280px] w-[280px] lg:mt-10 lg:h-[400px] lg:w-[400px]"
       >
         <Image
-          width={280}
-          height={280}
+          width={600}
+          height={600}
           src="/remember-action-logo.svg"
           alt="logo"
         />

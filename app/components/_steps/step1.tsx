@@ -1,9 +1,15 @@
 import { RadioGroup, RadioGroupItem } from "@/app/components/ui/radio-group";
-import { FormControl, FormField, FormItem, FormLabel } from "./ui/form";
-import { Input } from "./ui/input";
+import {
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "../ui/form";
+import { Input } from "../ui/input";
 import { Label } from "@radix-ui/react-label";
 import { Control } from "react-hook-form";
-import { FormSchema } from "./form.team";
+import { FormSchema } from "../_team/form.team";
 
 interface Step1Props {
   control: Control<FormSchema>;
@@ -23,7 +29,8 @@ const Step1 = ({ control }: Step1Props) => {
         render={({ field }) => (
           <FormItem>
             <FormLabel className="h-[200px]">
-              <span className="text-red-500">*</span> Nome
+              <span className="text-red-500">*</span>
+              <span className="text-white">Nome</span>
             </FormLabel>
             <FormControl>
               <Input
@@ -32,6 +39,7 @@ const Step1 = ({ control }: Step1Props) => {
                 {...field}
               />
             </FormControl>
+            <FormMessage />
           </FormItem>
         )}
       ></FormField>
@@ -42,7 +50,8 @@ const Step1 = ({ control }: Step1Props) => {
         render={({ field }) => (
           <FormItem>
             <FormLabel>
-              <span className="text-red-500">*</span> Idade
+              <span className="text-red-500">*</span>
+              <span className="text-white">Idade</span>
             </FormLabel>
             <FormControl>
               <Input
@@ -51,6 +60,7 @@ const Step1 = ({ control }: Step1Props) => {
                 {...field}
               />
             </FormControl>
+            <FormMessage />
           </FormItem>
         )}
       ></FormField>
@@ -61,7 +71,8 @@ const Step1 = ({ control }: Step1Props) => {
         render={({ field }) => (
           <FormItem>
             <FormLabel>
-              <span className="text-red-500">*</span> Email
+              <span className="text-red-500">*</span>{" "}
+              <span className="text-white">Email</span>
             </FormLabel>
             <FormControl>
               <Input
@@ -70,6 +81,7 @@ const Step1 = ({ control }: Step1Props) => {
                 {...field}
               />
             </FormControl>
+            <FormMessage />
           </FormItem>
         )}
       ></FormField>
@@ -80,7 +92,8 @@ const Step1 = ({ control }: Step1Props) => {
         render={({ field }) => (
           <FormItem>
             <FormLabel>
-              <span className="text-red-500">*</span> Github
+              <span className="text-red-500">*</span>
+              <span className="text-white">Github</span>
             </FormLabel>
             <FormControl>
               <Input
@@ -89,6 +102,7 @@ const Step1 = ({ control }: Step1Props) => {
                 {...field}
               />
             </FormControl>
+            <FormMessage />
           </FormItem>
         )}
       ></FormField>
@@ -99,7 +113,8 @@ const Step1 = ({ control }: Step1Props) => {
         render={({ field }) => (
           <FormItem>
             <FormLabel>
-              <span className="text-red-500">*</span> Linkedin
+              <span className="text-red-500">*</span>
+              <span className="text-white">Linkedin</span>
             </FormLabel>
             <FormControl>
               <Input
@@ -108,6 +123,7 @@ const Step1 = ({ control }: Step1Props) => {
                 {...field}
               />
             </FormControl>
+            <FormMessage />
           </FormItem>
         )}
       ></FormField>

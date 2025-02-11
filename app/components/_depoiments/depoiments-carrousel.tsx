@@ -8,7 +8,7 @@ import {
   CarouselPrevious,
 } from "@/app/components/ui/carousel";
 
-import depoimentsOptions from "./constants/depoisments";
+import depoimentsOptions from "../constants/depoiments";
 import Image from "next/image";
 import { Github, Linkedin } from "lucide-react";
 

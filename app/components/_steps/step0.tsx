@@ -1,4 +1,4 @@
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 interface Step0Props {
   setSubscribe: () => void;
@@ -6,13 +6,15 @@ interface Step0Props {
 
 const Step0 = ({ setSubscribe }: Step0Props) => {
   return (
-    <div className="mt-4 max-w-md gap-4 space-y-4 rounded-lg p-6 text-white">
-      <h2 className="text-center text-xl font-bold">Junte-se ao time!</h2>
-      <p className="mt-2 text-center text-sm">
+    <div className="mt-4 w-full gap-4 space-y-4 rounded-lg p-6 text-white lg:m-auto lg:p-10">
+      <h2 className="text-center text-xl font-bold lg:text-3xl">
+        Junte-se ao time!
+      </h2>
+      <p className="mt-2 text-center text-sm lg:text-base">
         Tem interesse em participar do Union? Confira abaixo os requisitos para
         participar.
       </p>
-      <ul className="mt-4 space-y-6 text-sm">
+      <ul className="mt-4 space-y-6 text-sm lg:text-lg">
         <li>
           <span className="bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] bg-clip-text font-semibold text-transparent">
             ✔
@@ -59,7 +61,7 @@ const Step0 = ({ setSubscribe }: Step0Props) => {
       </ul>
       <Button
         onClick={() => setSubscribe()}
-        className="mt-4 w-full rounded-lg bg-gradient-to-r from-purple-700 to-blue-600 px-4 py-4 font-bold text-white"
+        className="mt-4 w-full rounded-lg bg-gradient-to-r from-purple-700 to-blue-600 px-4 py-4 font-bold text-white lg:py-5 lg:text-lg"
       >
         Inscreva-se
       </Button>

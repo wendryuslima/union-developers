@@ -1,7 +1,8 @@
 import { Control } from "react-hook-form";
-import { FormControl, FormField, FormItem, FormLabel } from "./ui/form";
-import { Input } from "./ui/input";
-import { FormSchema } from "./form.team";
+
+import { Input } from "../ui/input";
+import { FormSchema } from "../_team/form.team";
+import { FormControl, FormField, FormItem, FormLabel } from "../ui/form";
 
 interface Step4Props {
   control: Control<FormSchema>;

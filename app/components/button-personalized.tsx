@@ -7,7 +7,7 @@ interface ButtonPersonalizedProps {
 
 const ButtonPersonalized = ({ text }: ButtonPersonalizedProps) => {
   return (
-    <Button className="rounded-lg bg-gradient-to-r from-purple-700 to-blue-600 px-8 py-8 text-2xl font-bold text-white">
+    <Button className="rounded-lg bg-gradient-to-r from-purple-800 to-blue-600 px-7 py-7 text-xl font-bold text-white">
       {text}
     </Button>
   );

@@ -17,7 +17,7 @@ const Header = () => {
 
   useEffect(() => {
     const sections = document.querySelectorAll(
-      "#sobre, #pilares, #benefícios, #etapas, #depoimentos, #duvidas",
+      "#sobre, #pilares, #benefícios, #etapas, #depoimentos, #duvidas, #time",
     );
 
     const observer = new IntersectionObserver(

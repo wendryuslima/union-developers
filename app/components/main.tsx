@@ -25,9 +25,14 @@ const Main = () => {
           estar em uma empresa. Participe dessa experiência única e impulsione
           sua carreira como desenvolvedor!
         </p>
-        <Button className="rounded-md bg-gradient-to-r from-purple-800 to-blue-600 px-7 py-7 text-xl font-bold text-white lg:mt-3 lg:max-w-[300px]">
-          Quero participar
-        </Button>
+
+        <div className="ml-4 hidden lg:block">
+          <Button className="hover:blue-l-blue-800 relative w-[220px] overflow-hidden rounded-md border-transparent bg-gradient-to-r from-purple-900 to-blue-600 px-5 py-5 text-sm font-bold text-white transition-all duration-300 before:absolute before:inset-0 before:w-0 before:bg-[#121119] before:transition-all before:duration-300 hover:border-2 hover:border-b-blue-800 hover:border-r-purple-900 hover:border-t-purple-700 hover:before:w-full">
+            <a href="#time" className="relative z-10">
+              Quero participar
+            </a>
+          </Button>
+        </div>
       </div>
 
       {/* Animação do logo */}

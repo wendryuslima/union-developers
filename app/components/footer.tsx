@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 const Footer = () => {
   return (
     <>
-      <div className="mx-auto mt-2 flex w-[450px] items-center gap-6 space-y-4 bg-black p-6 px-4 lg:w-[1400px] lg:flex-row lg:justify-between">
+      <div className="mx-auto mt-2 flex w-[450px] flex-col items-center gap-6 space-y-4 bg-[black] p-6 px-4 lg:w-[1400px] lg:flex-row lg:justify-between">
         <div className="mt-4 flex flex-col items-center gap-4 text-center text-sm">
           <Image
             src="/logo-union-developers.svg"

@@ -58,12 +58,11 @@ const FormTeam = () => {
   };
   const prevStep = () => step > 0 && setStep((prev) => prev - 1);
 
-  // Função onSubmit agora salva os dados no localStorage
   const onSubmit = async (data: FormSchema) => {
     try {
-      // Salva os dados no localStorage
       localStorage.setItem("formData", JSON.stringify(data));
       console.log("Dados salvos no localStorage:", data);
+     
     } catch (error) {
       console.error("Erro ao salvar no localStorage", error);
     }
@@ -99,7 +98,7 @@ const FormTeam = () => {
               </Button>
             ) : (
               <Button
-                type="submit" // Aqui é o tipo 'submit' para que o formulário seja enviado ao clicar no botão
+                type="submit" 
                 className="w-[150px] rounded-lg bg-gradient-to-r from-purple-700 to-blue-600 text-2xl font-bold text-white"
               >
                 Enviar

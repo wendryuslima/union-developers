@@ -129,7 +129,7 @@ const Step1 = ({ control }: Step1Props) => {
       ></FormField>
 
       <div className="">
-        <Label>
+        <Label className="borber-white border-solid">
           <span className="text-red-500">*</span> Onde você gosta mais de
           trabalhar?
         </Label>

@@ -6,15 +6,18 @@ interface Step0Props {
 
 const Step0 = ({ setSubscribe }: Step0Props) => {
   return (
-    <div className="mt-4 w-full gap-4 space-y-4 rounded-lg p-6 text-white lg:m-auto lg:p-10">
+    <div
+      id="time"
+      className="mt-4 w-full max-w-[450px] gap-4 space-y-4 rounded-lg px-6 text-white lg:m-auto lg:max-w-[650px] lg:p-5 lg:px-10"
+    >
       <h2 className="text-center text-xl font-bold lg:text-3xl">
         Junte-se ao time!
       </h2>
-      <p className="mt-2 text-center text-sm lg:text-base">
+      <p className="mt-2 text-center text-sm lg:mx-auto lg:w-[250px] lg:justify-center lg:text-sm">
         Tem interesse em participar do Union? Confira abaixo os requisitos para
         participar.
       </p>
-      <ul className="mt-4 space-y-6 text-sm lg:text-lg">
+      <ul className="mt-4 space-y-6 text-sm lg:text-sm">
         <li>
           <span className="bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] bg-clip-text font-semibold text-transparent">
             ✔

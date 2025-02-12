@@ -9,6 +9,7 @@ import Steps from "./components/steps";
 import Subscribes from "./components/subscribe";
 import Team from "./components/_team/team";
 import Pillars from "./components/pillars/pillars";
+import Footer from "./components/footer";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Depoiments />
       <Team />
       <Doubts />
+      <Footer />
     </div>
   );
 };

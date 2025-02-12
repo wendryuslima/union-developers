@@ -1,6 +1,9 @@
 const About = () => {
   return (
-    <div className="relative mx-auto mt-10 flex w-full flex-col items-center p-6 lg:w-[700px]">
+    <div
+      id="sobre"
+      className="mx-auto mt-12 flex w-[450px] flex-col items-center gap-6 space-y-4 rounded-lg bg-gradient-to-br p-6 px-4 lg:w-[650px]"
+    >
       <div className="relative z-20 rounded-xl border-2 border-b-blue-600 border-l-blue-800 border-r-purple-800 border-t-purple-600 p-6 text-white lg:max-h-[350px] lg:w-[800px] lg:px-4">
         <h2 className="absolute -top-6 left-6 z-20 bg-[#1F1D2B] px-4 text-lg font-semibold text-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] lg:text-3xl">
           Quem somos?

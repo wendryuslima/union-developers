@@ -3,7 +3,7 @@ import benefitsOptins from "../constants/benefits";
 
 const BenefitsItem = () => {
   return (
-    <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-24 p-6">
+    <div className="max-full mx-auto flex flex-col items-center justify-center gap-24 p-6">
       {benefitsOptins.map((option, index) => (
         <div
           key={option.title}

@@ -15,18 +15,21 @@ import Step0 from "../_steps/step0";
 import Step3 from "../_steps/step3";
 
 const formSchema = z.object({
-  name: z.string().min(1, {
+  name: z.string().min(3, {
     message: '"Nome é obrigatório"',
   }),
-  year: z.coerce.number().int().positive().min(4, {
-    message: "Ano deve ter pelo menos 4 caracteres",
+  year: z.coerce.number().int().positive().min(18, {
+    message: "Idade deve ser igual ou maior que 18",
   }),
   email: z.string().email("Email inválido"),
   github: z.string().url("URL do GitHub inválida"),
   linkedin: z.string().url("URL do LinkedIn inválida"),
-  description: z.string().min(10, {
-    message: "Descrição deve ter pelo menos 10 caracteres",
-  }),
+  description: z
+    .string()
+    .refine((val) => val === "" || val.length >= 10, {
+      message: "Descrição deve ter pelo menos 10 caracteres",
+    })
+    .optional(),
 });
 
 export type FormSchema = z.infer<typeof formSchema>;
@@ -54,11 +57,15 @@ const FormTeam = () => {
     }
   };
   const prevStep = () => step > 0 && setStep((prev) => prev - 1);
-  const onSubmit = async () => {
+
+  // Função onSubmit agora salva os dados no localStorage
+  const onSubmit = async (data: FormSchema) => {
     try {
-      console.log("logado");
+      // Salva os dados no localStorage
+      localStorage.setItem("formData", JSON.stringify(data));
+      console.log("Dados salvos no localStorage:", data);
     } catch (error) {
-      console.error(error);
+      console.error("Erro ao salvar no localStorage", error);
     }
   };
 
@@ -92,7 +99,7 @@ const FormTeam = () => {
               </Button>
             ) : (
               <Button
-                type="submit"
+                type="submit" // Aqui é o tipo 'submit' para que o formulário seja enviado ao clicar no botão
                 className="w-[150px] rounded-lg bg-gradient-to-r from-purple-700 to-blue-600 text-2xl font-bold text-white"
               >
                 Enviar

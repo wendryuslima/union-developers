@@ -7,15 +7,8 @@ import { Button } from "./ui/button";
 
 const Main = () => {
   return (
-    <div className="relative flex w-[1500px] w-full bg-cover p-[5.6rem_1.6rem_1.2rem] lg:mt-12 lg:h-[100vh] lg:flex-row lg:items-center lg:justify-center">
+    <div className="relative flex w-full bg-cover p-[5.6rem_1.6rem_1.2rem] lg:mt-12 lg:h-[100vh] lg:flex-row lg:items-center lg:justify-center">
       {/* Imagem de fundo */}
-      <Image
-        src="/background-union.jpg"
-        alt="background"
-        width={20}
-        height={20}
-        className="absolute inset-0 -z-10 h-full w-full object-cover"
-      />
 
       {/* Conteúdo */}
       <div className="items-left flex w-[300px] flex-col gap-4 lg:w-[600px]">
@@ -26,13 +19,13 @@ const Main = () => {
           </span>{" "}
           como desenvolvedor júnior
         </h2>
-        <p className="lg:w-[470px] lg:mt-4 lg:text-lg">
+        <p className="lg:mt-4 lg:w-[470px] lg:text-lg">
           Descubra como o Union oferece um ambiente prático e imersivo para
           desenvolvedores juniors ganharem experiência de mercado, mesmo sem
           estar em uma empresa. Participe dessa experiência única e impulsione
           sua carreira como desenvolvedor!
         </p>
-        <Button className="rounded-md lg:mt-3 bg-gradient-to-r from-purple-800 to-blue-600 px-7 py-7 text-xl font-bold text-white lg:max-w-[300px]">
+        <Button className="rounded-md bg-gradient-to-r from-purple-800 to-blue-600 px-7 py-7 text-xl font-bold text-white lg:mt-3 lg:max-w-[300px]">
           Quero participar
         </Button>
       </div>

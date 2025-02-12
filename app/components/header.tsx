@@ -11,6 +11,7 @@ import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState<string>("");
@@ -41,14 +42,19 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 z-50 flex w-full items-center justify-between space-x-4 bg-[#121119] px-5 py-5 lg:h-[100px] lg:justify-center">
+    <header
+      id="home"
+      className="fixed top-0 z-50 flex w-full items-center justify-between space-x-4 bg-[#121119] px-5 py-5 lg:h-[100px] lg:justify-center"
+    >
       <div className="mr-3 items-center">
-        <Image
-          src="/logo-union-developers.svg"
-          alt="Union Developers"
-          height={180}
-          width={180}
-        />
+        <Link href="#home">
+          <Image
+            src="/logo-union-developers.svg"
+            alt="Union Developers"
+            height={180}
+            width={180}
+          />
+        </Link>
       </div>
 
       <nav className="hidden lg:flex lg:items-center lg:space-x-6">

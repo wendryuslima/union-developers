@@ -8,11 +8,11 @@ import { Button } from "./ui/button";
 
 const Subscribes = () => {
   return (
-    <div className="mx-auto mt-12 flex w-[450px] flex-col items-center justify-center gap-6 space-y-4 rounded-lg bg-[#252031] bg-gradient-to-br p-6 px-4 px-8 shadow-lg lg:w-[650px]">
+    <div className="w-50 mx-auto mt-12 flex flex-col items-center justify-center gap-6 space-y-4 rounded-lg bg-[#252031] bg-gradient-to-br p-6 px-4 px-8 shadow-lg lg:w-[650px]">
       <motion.div
         animate={{ y: [0, -10, 0] }}
         transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-        className="h-[280px] w-[280px] lg:mt-10 lg:h-[400px] lg:w-[400px]"
+        className="h-[300px] w-[280px] lg:mt-10 lg:h-[400px] lg:w-[400px]"
       >
         <Image
           width={600}

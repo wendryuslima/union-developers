@@ -2,7 +2,7 @@ import BenefitsItem from "./benefits-item";
 
 const Benefits = () => {
   return (
-    <div className="justif mx-auto mt-12 flex w-[450px] flex-col items-center gap-6 space-y-4 rounded-lg bg-gradient-to-br p-6 px-4 lg:w-[1200px]">
+    <div className="justif w-50 mx-auto mt-12 flex flex-col items-center gap-6 space-y-4 rounded-lg bg-gradient-to-br p-6 px-4 lg:w-[1200px]">
       <div
         id="benefícios"
         className="relative flex w-full max-w-md items-center justify-center lg:max-w-5xl"

@@ -8,7 +8,7 @@ const Step0 = ({ setSubscribe }: Step0Props) => {
   return (
     <div
       id="time"
-      className="mt-4 w-full justify-center items-center gap-4 space-y-4 rounded-lg p-6 text-white lg:m-auto lg:p-10"
+      className="w-50 mt-4 items-center justify-center gap-4 space-y-4 rounded-lg p-6 text-white lg:m-auto lg:p-10"
     >
       <h2 className="text-center text-xl font-bold lg:text-3xl">
         Junte-se ao time!
@@ -65,7 +65,7 @@ const Step0 = ({ setSubscribe }: Step0Props) => {
       <div className="mt-4">
         <Button
           onClick={() => setSubscribe()}
-          className="hover:blue-l-blue-800 relative w-full overflow-hidden rounded-md border-transparent bg-gradient-to-r from-purple-900 to-blue-600 px-6 py-6 text-sm text-xl font-bold text-white transition-all duration-300 before:absolute before:inset-0 before:w-0 before:bg-[#121119] before:transition-all before:duration-300 hover:border-2 hover:border-b-blue-800 hover:border-r-purple-900 hover:border-t-purple-700 hover:before:w-full"
+          className="hover:blue-l-blue-800 relative w-full overflow-hidden rounded-md border-transparent bg-gradient-to-r from-purple-900 to-blue-600 px-6 py-6 text-sm font-bold text-white transition-all duration-300 before:absolute before:inset-0 before:w-0 before:bg-[#121119] before:transition-all before:duration-300 hover:border-2 hover:border-b-blue-800 hover:border-r-purple-900 hover:border-t-purple-700 hover:before:w-full"
         >
           <a href="#time" className="relative z-10">
             Inscreva-se

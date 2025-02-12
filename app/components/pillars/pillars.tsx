@@ -4,7 +4,7 @@ const Pillars = () => {
   return (
     <div
       id="pilares"
-      className="mx-auto mt-12 flex w-[450px] flex-col items-center justify-center gap-4 space-y-4 p-6 px-4 lg:w-[1200px]"
+      className="w-50 mx-auto mt-12 flex flex-col items-center justify-center gap-4 space-y-4 p-6 px-4 lg:w-[1200px]"
     >
       <div className="relative mt-12 flex flex-col items-center text-center lg:mt-16">
         <div className="relative flex w-full max-w-md items-center justify-center lg:max-w-5xl">

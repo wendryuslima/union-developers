@@ -4,7 +4,7 @@ const Steps = () => {
   return (
     <div
       id="etapas"
-      className="mx-auto mt-12 flex w-[450px] flex-col items-center justify-center gap-6 space-y-4 rounded-lg bg-gradient-to-br p-6 px-4 lg:w-[1200px]"
+      className="mt-12 flex max-w-4xl flex-col items-center justify-center gap-6 space-y-4 rounded-lg bg-gradient-to-br p-6 px-4 lg:w-[1200px]"
     >
       <div className="relative flex w-full max-w-md items-center justify-center lg:max-w-5xl">
         <div className="h-0.5 w-1/3 bg-gradient-to-r from-purple-500 to-transparent lg:w-5/12"></div>
@@ -14,13 +14,13 @@ const Steps = () => {
         <div className="h-0.5 w-1/3 bg-gradient-to-l from-blue-500 to-transparent lg:w-5/12"></div>
       </div>
 
-      <div className="m-auto mt-5 flex justify-center p-4 lg:items-center lg:text-center">
+      <div className="mt-5 flex w-full justify-center p-4 lg:items-center lg:text-center">
         <h1 className="mt-4 px-4 text-center text-base lg:w-[950px] lg:px-12 lg:text-xl lg:leading-relaxed">
           Conheça as etapas do nosso processo seletivo
         </h1>
       </div>
 
-      <div className="mt-4 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+      <div className="mt-4 flex flex-col space-y-4 lg:grid lg:grid-cols-2 lg:gap-16">
         <StepsItems
           number="1"
           title="Pré-inscrição"

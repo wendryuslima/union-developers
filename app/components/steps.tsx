@@ -2,12 +2,12 @@ import StepsItems from "./_steps/steps-items";
 
 const Steps = () => {
   return (
-    <div
-      id="etapas"
-      className="w-50 mx-auto mt-12 flex flex-col items-center justify-center gap-6 space-y-4 rounded-lg bg-gradient-to-br p-6 px-4 lg:w-[1200px]"
-    >
+    <div className="w-50 mx-auto mt-12 flex flex-col items-center justify-center gap-6 space-y-4 rounded-lg bg-gradient-to-br p-6 px-4 lg:w-[1200px]">
       <div className="relative flex w-full max-w-md items-center justify-center lg:max-w-5xl">
-        <div className="h-0.5 w-1/3 bg-gradient-to-r from-purple-500 to-transparent lg:w-5/12"></div>
+        <div
+          id="etapas"
+          className="h-0.5 w-1/3 bg-gradient-to-r from-purple-500 to-transparent lg:w-5/12"
+        ></div>
         <h2 className="mt-14 bg-[linear-gradient(225deg,_rgb(0,72,254)_0%,_rgb(133,29,134)_100%)] bg-clip-text text-2xl font-semibold text-transparent lg:text-4xl">
           Etapas
         </h2>

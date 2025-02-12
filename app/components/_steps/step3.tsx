@@ -154,7 +154,10 @@ Por que você quer fazer parte do Union??"
         />
 
         <div className="mt-4 flex items-center gap-2">
-          <Checkbox className="border-white text-blue-600" />
+          <Checkbox
+          
+            className="border-white text-blue-600"
+          />
           <h1>Li e aceito os</h1>
           <Sheet>
             <SheetTrigger>termos</SheetTrigger>

@@ -51,7 +51,6 @@ const Header = () => {
         />
       </div>
 
-      {/* Menu Desktop */}
       <nav className="hidden lg:flex lg:items-center lg:space-x-6">
         {[
           "Sobre",

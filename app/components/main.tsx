@@ -8,9 +8,6 @@ import { Button } from "./ui/button";
 const Main = () => {
   return (
     <div className="relative flex w-full bg-cover p-[5.6rem_1.6rem_1.2rem] lg:mt-12 lg:h-[100vh] lg:flex-row lg:items-center lg:justify-center">
-      {/* Imagem de fundo */}
-
-      {/* Conteúdo */}
       <div className="items-left flex w-[300px] flex-col gap-4 lg:w-[600px]">
         <h2 className="text-2xl font-bold text-white lg:text-4xl">
           Ganhe{" "}
@@ -35,7 +32,6 @@ const Main = () => {
         </div>
       </div>
 
-      {/* Animação do logo */}
       <div className="hidden lg:block">
         <motion.div
           animate={{ y: [0, -10, 0] }}

@@ -32,7 +32,7 @@ const Step3 = ({ control }: Step4Props) => {
               </FormLabel>
               <FormControl>
                 <Input
-                  className="h-[50px] rounded-lg"
+                  className="h-[50px] rounded-lg border-white"
                   placeholder="Qual sua motivação para fazer o que faz?"
                   {...field}
                 />
@@ -54,7 +54,7 @@ const Step3 = ({ control }: Step4Props) => {
               </FormLabel>
               <FormControl>
                 <Input
-                  className="h-[50px] rounded-lg"
+                  className="h-[50px] rounded-lg border-white"
                   placeholder="Como você faz para conseguir cumprir todos as suas responsabilidades do dia a dia??"
                   {...field}
                 />
@@ -76,7 +76,7 @@ const Step3 = ({ control }: Step4Props) => {
               </FormLabel>
               <FormControl>
                 <Input
-                  className="h-[150px] rounded-lg"
+                  className="h-[150px] rounded-lg border-white"
                   placeholder="Quando você recebe um feedback, como é para você??"
                   {...field}
                 />
@@ -98,7 +98,7 @@ const Step3 = ({ control }: Step4Props) => {
               </FormLabel>
               <FormControl>
                 <Input
-                  className="h-[150px] rounded-lg"
+                  className="h-[150px] rounded-lg border-white"
                   placeholder="Como você ficou sabendo sobre o Union??"
                   {...field}
                 />
@@ -120,7 +120,7 @@ const Step3 = ({ control }: Step4Props) => {
               </FormLabel>
               <FormControl>
                 <Input
-                  className="h-[150px] rounded-lg"
+                  className="h-[150px] rounded-lg border-white"
                   placeholder="
 Por que você quer fazer parte do Union??"
                   {...field}
@@ -144,7 +144,7 @@ Por que você quer fazer parte do Union??"
               </FormLabel>
               <FormControl>
                 <Input
-                  className="h-[150px] rounded-lg"
+                  className="h-[150px] rounded-lg border-white"
                   placeholder="Por que você deveria fazer parte do pequeno grupo que vai ter a oportunidade de participar do Union?"
                   {...field}
                 />
@@ -154,10 +154,7 @@ Por que você quer fazer parte do Union??"
         />
 
         <div className="mt-4 flex items-center gap-2">
-          <Checkbox
-          
-            className="border-white text-blue-600"
-          />
+          <Checkbox className="border-white text-blue-600" />
           <h1>Li e aceito os</h1>
           <Sheet>
             <SheetTrigger>termos</SheetTrigger>

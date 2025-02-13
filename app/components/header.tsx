@@ -117,9 +117,11 @@ const Header = () => {
                 </a>
               ))}
 
-              <Button className="rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 px-5 py-4 text-lg font-bold text-white">
-                Junte-se a nós
-              </Button>
+              <Link href="#time">
+                <Button className="rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 px-5 py-4 text-lg font-bold text-white">
+                  Junte-se a nós
+                </Button>
+              </Link>
             </div>
           </SheetContent>
         </Sheet>

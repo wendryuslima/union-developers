@@ -8,7 +8,7 @@ import Step0 from "../_steps/step0";
 const Team = () => {
   const [subsbribe, setSubscribe] = useState(false);
   return (
-    <div className="w-50 mx-auto mt-4 flex items-center justify-center from-[#0048FE]/20 to-[#851D86]/20 px-7 lg:mx-auto lg:w-[900px] lg:justify-center">
+    <div className="w-50 mx-auto mt-12 flex items-center justify-center from-[#0048FE]/20 to-[#851D86]/20 px-7 lg:mx-auto lg:w-[900px] lg:justify-center">
       <div className="w-[100%] rounded-lg bg-gradient-to-br p-6 shadow-lg lg:max-w-[650px]">
         {!subsbribe ? (
           <Step0 setSubscribe={() => setSubscribe(true)} />

@@ -82,7 +82,7 @@ const Step2 = ({ control }: Step2Props) => {
               </FormLabel>
               <FormControl>
                 <Input
-                  className="h-[50px] rounded-lg"
+                  className="h-[50px] rounded-lg border-white"
                   placeholder="Qual o link para o repositório do seu melhor projeto?"
                   {...field}
                 />

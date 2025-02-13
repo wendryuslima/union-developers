@@ -34,7 +34,7 @@ const Step1 = ({ control }: Step1Props) => {
             </FormLabel>
             <FormControl>
               <Input
-                className="h-[50px] rounded-lg"
+                className="h-[50px] rounded-lg border-white"
                 placeholder="Qual seu nome completo?"
                 {...field}
               />
@@ -55,7 +55,7 @@ const Step1 = ({ control }: Step1Props) => {
             </FormLabel>
             <FormControl>
               <Input
-                className="h-[50px] rounded-lg"
+                className="h-[50px] rounded-lg border-white"
                 placeholder="Qual sua idade?"
                 {...field}
               />
@@ -76,7 +76,7 @@ const Step1 = ({ control }: Step1Props) => {
             </FormLabel>
             <FormControl>
               <Input
-                className="h-[50px] rounded-lg"
+                className="h-[50px] rounded-lg border-white"
                 placeholder="Qual seu email?"
                 {...field}
               />
@@ -97,7 +97,7 @@ const Step1 = ({ control }: Step1Props) => {
             </FormLabel>
             <FormControl>
               <Input
-                className="h-[50px] rounded-lg"
+                className="h-[50px] rounded-lg border-white"
                 placeholder="Qual seu Github?"
                 {...field}
               />
@@ -118,7 +118,7 @@ const Step1 = ({ control }: Step1Props) => {
             </FormLabel>
             <FormControl>
               <Input
-                className="h-[50px] rounded-lg"
+                className="h-[50px] rounded-lg border-white"
                 placeholder="Qual seu linkedin?"
                 {...field}
               />
